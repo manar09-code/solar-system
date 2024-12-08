@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كوكب المشتري</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1e2f;
+            color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            animation: fadeInBody 1s ease-out;
+        }
+
+        header {
+            background-color: #ff7043;
+            padding: 20px;
+            animation: slideInHeader 1.5s ease-out;
+        }
+      
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #ffffff;
+            animation: glowText 1.5s infinite alternate;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffb74d;
+            text-shadow: 0 0 10px #ffb74d, 0 0 20px #ffb74d;
+        }
+
+        h2 {
+            color: #ffb74d;
+            animation: fadeInText 2s ease-out;
+        }
+
+        .fact {
+            background-color: #333333;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border: 1px solid #ff7043;
+            animation: fadeInFact 2s ease-out;
+        }
+
+        .fact p {
+            margin: 0;
+        }
+
+        footer {
+            background-color: rgba(0, 10, 30, 0.9);
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            animation: fadeInFooter 2s ease-out 1s;
+        }
+
+        .planet-image {
+            width: 80%;
+            max-width: 600px;
+            border-radius: 10px;
+            margin-top: 20px;
+            animation: zoomIn 1s ease-in-out;
+        }
+
+        .back-button {
+            float: left;
+            background-color: #2f1805; 
+            color: #ffffff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #ff7043;
+            animation: buttonHover 0.5s ease-in-out;
+        }
+
+        @keyframes fadeInBody {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInHeader {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes glowText {
+            0% {
+                text-shadow: 0 0 10px #ff7043, 0 0 20px #ff7043, 0 0 30px #ff7043;
+            }
+            100% {
+                text-shadow: 0 0 20px #ff7043, 0 0 40px #ff7043, 0 0 60px #ff7043;
+            }
+        }
+
+        @keyframes fadeInText {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInFact {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInFooter {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes buttonHover {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>كوكب المشتري</h1>
+        <a  href="../index.html"><button class="back-button">القائمة</button></a>
+        <nav>
+            <a href="#about">حول المشتري</a>
+            <a href="#facts">حقائق عن المشتري</a>
+            <a href="#location">موقع المشتري</a>
+        </nav>
+    </header>
+
+    <section class="content" id="about">
+        <h2>حول كوكب المشتري</h2>
+        <p>المشتري هو الكوكب الخامس في النظام الشمسي وأكبر كوكب فيه. يتميز بجو مليء بالغازات المتنوعة ويُعرف بوجود العواصف العاتية مثل البقعة الحمراء الكبرى.</p>
+        
+        <img src="https://cdn.britannica.com/66/155966-131-17B5B518/Jupiter.jpg" alt="كوكب المشتري" class="planet-image">
+    </section>
+
+    <section class="content" id="facts">
+        <h2>حقائق عن كوكب المشتري</h2>
+        <div class="fact">
+            <p>المشتري هو أكبر كوكب في النظام الشمسي، حيث يتسع لـ 1,300 كوكب مثل الأرض.</p>
+        </div>
+        <div class="fact">
+            <p>يتكون المشتري بشكل أساسي من الهيدروجين والهيليوم.</p>
+        </div>
+        <div class="fact">
+            <p>يملك المشتري أكثر من 79 قمرًا معروفًا، بما في ذلك القمر الكبير غانيميد، الذي يعد أكبر قمر في النظام الشمسي.</p>
+        </div>
+        <div class="fact">
+            <p>تدور الرياح على سطحه بسرعة تصل إلى 432 كم/ساعة.</p>
+        </div>
+    </section>
+    <section class="content" id="location">
+        <h2>موقع كوكب المشتري</h2>
+        <p>المشتري يقع بين كوكب المريخ وكوكب زحل في النظام الشمسي، ويبعد عن الشمس بمسافة تقارب 778 مليون كيلومتر.</p>
+    </section>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © 2024</p>
+    </footer>
+</body>
+</html>

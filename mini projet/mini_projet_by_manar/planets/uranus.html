@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كوكب أورانوس</title>
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            background-image: url('images/uranus.jpg'); 
+            background-size: cover;
+            background-position: center center;
+            color: #ffffff; 
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            animation: fadeIn 2s ease-out;
+        }
+
+        header {
+            background-color: rgba(0, 188, 212, 0.8); 
+            padding: 20px;
+            animation: fadeInHeader 2s ease-out;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #ffffff; 
+            animation: glowText 1.5s infinite alternate;
+        }
+
+        nav {
+            margin-top: 15px;
+            opacity: 0;
+            animation: fadeInNav 2s ease-out 1s forwards;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #00bcd4;
+            text-shadow: 0 0 10px #00bcd4, 0 0 20px #00bcd4;
+        }
+
+        nav a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 0;
+            height: 2px;
+            background-color: #00bcd4;
+            transition: width 0.5s ease-out;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .content {
+            padding: 20px;
+            animation: fadeInContent 2s ease-out;
+        }
+
+        h2 {
+            color: #80e0e9; 
+            animation: fadeInText 2s ease-out;
+        }
+
+        .fact {
+            background-color: rgba(51, 51, 51, 0.8); 
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border: 1px solid #00bcd4; 
+            animation: fadeInFact 2s ease-out;
+        }
+
+        footer {
+            background-color: rgba(0, 10, 30, 0.9); 
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            animation: fadeInFooter 2s ease-out 1s;
+        }
+
+        img.uranus {
+            width: 50%; 
+            margin-top: 20px;
+            border-radius: 10px;
+            animation: fadeInImage 2s ease-out 1s;
+        }
+
+        .back-button {
+            float: left;
+            background-color: #0b0f32; 
+            color: #ffffff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #00bcd4;
+            animation: buttonHover 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInHeader {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes glowText {
+            0% {
+                text-shadow: 0 0 10px #80e0e9, 0 0 20px #80e0e9, 0 0 30px #80e0e9;
+            }
+            100% {
+                text-shadow: 0 0 20px #80e0e9, 0 0 40px #80e0e9, 0 0 60px #80e0e9;
+            }
+        }
+
+        @keyframes fadeInNav {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInContent {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInText {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInFact {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInFooter {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInImage {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes buttonHover {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>كوكب أورانوس</h1>
+        <a href="../index.html"><button class="back-button">القائمة</button></a>
+        <nav>
+            <a href="#about">حول أورانوس</a>
+            <a href="#facts">حقائق عن أورانوس</a>
+            <a href="#location">موقع أورانوس</a>
+        </nav>
+    </header>
+
+    <section class="content" id="about">
+        <h2>حول كوكب أورانوس</h2>
+        <img class="uranus" src="https://img.freepik.com/premium-photo/uranus-planet-solar-system_297535-4535.jpg" alt="صورة كوكب أورانوس">
+        <p>أورانوس هو الكوكب السابع من حيث البعد عن الشمس في النظام الشمسي، ويتميز بلونه الأزرق الفاتح بسبب الغازات الميثانية في غلافه الجوي.</p>
+    </section>
+
+    <section class="content" id="facts">
+        <h2>حقائق عن كوكب أورانوس</h2>
+        <div class="fact">
+            <p>أورانوس هو الكوكب الوحيد الذي يدور حول الشمس بشكل أفقي تقريبًا.</p>
+        </div>
+        <div class="fact">
+            <p>أورانوس يحتوي على غلاف جوي يتكون من الميثان والهيدروجين والهيليوم.</p>
+        </div>
+        <div class="fact">
+            <p>أورانوس يستغرق 17.24 ساعة لإتمام دورة كاملة حول محوره.</p>
+        </div>
+        <div class="fact">
+            <p>أورانوس يمتلك 27 قمرًا معروفًا حتى الآن.</p>
+        </div>
+    </section>
+
+    <section class="content" id="location">
+        <h2>موقع كوكب أورانوس</h2>
+        <p>أورانوس يقع بين كوكب زحل وكوكب نبتون في النظام الشمسي، ويبعد عن الشمس بمسافة تقارب 2.9 مليار كيلومتر.</p>
+    </section>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © 2024</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كوكب الأرض</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a2e;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #4caf50;
+            padding: 20px;
+            animation: fadeInHeader 1.5s ease-out;
+        }
+
+        @keyframes fadeInHeader {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #ffffff;
+            animation: glowText 1.5s infinite alternate;
+        }
+
+        @keyframes glowText {
+            0% {
+                text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
+            }
+            100% {
+                text-shadow: 0 0 20px #00ff00, 0 0 40px #00ff00;
+            }
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #80e0a7;
+            text-shadow: 0 0 10px #80e0a7, 0 0 20px #80e0a7;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        h2 {
+            color: #80e0a7;
+        }
+
+        .fact {
+            background-color: #333333;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border: 1px solid #4caf50;
+            animation: fadeInFact 1s ease-out;
+        }
+
+        @keyframes fadeInFact {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        footer {
+            background-color: rgba(0, 10, 30, 0.9);
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            animation: fadeInFooter 2s ease-out 1s;
+        }
+
+        @keyframes fadeInFooter {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .earth-image {
+            width: 50%;
+            margin: 20px 0;
+            border-radius: 8px;
+            animation: zoomIn 1s ease-in-out;
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .back-button {
+            float: left;
+            background-color: #0b2a20; 
+            color: #ffffff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #4caf50;
+            transform: scale(1.1);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>كوكب الأرض</h1>
+        <a href="../index.html"><button class="back-button">القائمة</button></a>
+        <nav>
+            <a href="#about">حول الأرض</a>
+            <a href="#facts">حقائق عن الأرض</a>
+            <a href="#location">موقع الأرض</a>
+        </nav>
+    </header>
+
+    <section class="content" id="about">
+        <h2>حول كوكب الأرض</h2>
+        <p>الأرض هي الكوكب الثالث من حيث البعد عن الشمس، وهي الكوكب الوحيد المعروف بوجود الحياة عليه. تتميز الأرض بوجود المحيطات والغلاف الجوي الذي يدعم الحياة.</p>
+        
+        <img class="earth-image" src="https://cdn.mos.cms.futurecdn.net/FaWKMJQnr2PFcYCmEyfiTm-1200-80.jpg" alt="كوكب الأرض">
+    </section>
+
+    <section class="content" id="facts">
+        <h2>حقائق عن كوكب الأرض</h2>
+        <div class="fact">
+            <p>الأرض هي الكوكب الوحيد الذي يحتوي على مياه سائلة على سطحه.</p>
+        </div>
+        <div class="fact">
+            <p>تدور الأرض حول محورها في 24 ساعة، مما ينتج عنه الليل والنهار.</p>
+        </div>
+        <div class="fact">
+            <p>الغلاف الجوي للأرض يتكون من 78% من النيتروجين و21% من الأوكسجين.</p>
+        </div>
+        <div class="fact">
+            <p>الأرض تحتوي على أكثر من 7.9 مليار شخص، مما يجعلها أكبر كوكب مأهول في النظام الشمسي.</p>
+        </div>
+    </section>
+
+    <section class="content" id="location">
+        <h2>موقع كوكب الأرض</h2>
+            <p>الأرض تقع بين كوكب الزهرة وكوكب المريخ في النظام الشمسي، وهي تبعد عن الشمس مسافة تقارب 150 مليون كيلومتر.</p>
+        </section>
+    
+        <footer>
+            <p>جميع الحقوق محفوظة © 2024</p>
+        </footer>
+    </body>
+    </html>

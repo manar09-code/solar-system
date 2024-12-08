@@ -1,0 +1,103 @@
+header {
+    background-color: rgba(0, 10, 30, 0.95);
+    color: #ffffff;
+    padding: 30px;
+    text-align: center;
+    border-bottom: 2px solid #00d4ff;
+    animation: slideIn 1.5s ease-out, headerPulse 3s infinite;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #00d4ff;
+    font-weight: bold;
+    text-shadow: 0 0 5px #00d4ff, 0 0 10px #00d4ff, 0 0 15px #00d4ff;
+    animation: glowText 1.5s infinite alternate;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+    transition: transform 0.3s ease;
+}
+
+h1:hover {
+    transform: scale(1.1);
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes headerPulse {
+    0% {
+        background-color: rgba(0, 10, 30, 0.95);
+    }
+    50% {
+        background-color: rgba(0, 10, 30, 1);
+    }
+    100% {
+        background-color: rgba(0, 10, 30, 0.95);
+    }
+}
+
+@keyframes glowText {
+    0% {
+        text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 30px #00d4ff;
+    }
+    100% {
+        text-shadow: 0 0 20px #00d4ff, 0 0 40px #00d4ff, 0 0 60px #00d4ff;
+    }
+}
+
+nav {
+    background-color: rgba(0, 20, 60, 0.95);
+    padding: 15px;
+    border-top: 2px solid #00d4ff;
+    animation: fadeInNav 1s ease-out;
+}
+
+@keyframes fadeInNav {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 15px;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+nav ul li a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
+}
+
+nav ul li a:hover {
+    color: #00d4ff;
+    text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff;
+}

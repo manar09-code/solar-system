@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كوكب زحل</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0d0d1a, #212121);
+            color: #f4f4f4;
+            margin: 15px 0;
+            padding: 0;
+            text-align: center;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: #ffb74d;
+            padding: 20px;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        nav {
+            margin-top: 15px;
+            opacity: 0;
+            animation: fadeIn 2s forwards 0.5s;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #d49b6a;
+        }
+
+        .content {
+            padding: 20px;
+            opacity: 0;
+            animation: fadeIn 2s forwards 1s;
+        }
+
+        h2 {
+            color: #d49b6a;
+        }
+
+        .fact {
+            background-color: #333333;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border: 1px solid #ffb74d;
+        }
+
+        img.saturn {
+            width: 80%;
+            margin-top: 30px;
+            border-radius: 8px;
+            opacity: 0;
+            animation: fadeIn 2s forwards 1.5s;
+        }
+
+        footer {
+            background-color: #212121;
+            color: #e0e0e0;
+            padding: 15px;
+            text-align: center;
+            margin-top: 30px;
+            opacity: 0;
+            animation: fadeIn 2s forwards 2s;
+        }
+
+        .back-button {
+            float: left;
+            background-color: #703a0e; 
+            color: #ffffff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #ffb74d;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>كوكب زحل</h1>
+        <a href="../index.html"><button class="back-button">القائمة</button></a>
+        <nav>
+            <a href="#about">حول زحل</a>
+            <a href="#facts">حقائق عن زحل</a>
+            <a href="#location">موقع زحل</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>حول كوكب زحل</h2>
+        <p>زحل هو الكوكب السادس من حيث البعد عن الشمس، ويشتهر بحلقاته الواسعة والجميلة. يتكون بشكل رئيسي من الهيدروجين والهيليوم، ويعد ثاني أكبر كوكب في النظام الشمسي بعد المشتري.</p>
+        <img class="saturn" src="https://dailygalaxy.com/wp-content/uploads/2024/05/En-tete-1.jpg" alt="صورة كوكب زحل">
+    </section>
+
+    <section id="facts">
+        <h2>حقائق عن كوكب زحل</h2>
+        <div class="fact">
+            <p>زحل هو ثاني أكبر كوكب في النظام الشمسي ويملك أكثر الحلقات وضوحًا.</p>
+        </div>
+        <div id="fact">
+            <p>تتكون حلقات زحل من جزيئات الجليد والغبار والصخور الصغيرة التي تتراوح في الحجم.</p>
+        </div>
+        <div class="fact">
+            <p>يستغرق زحل 29.5 سنة أرضية لإتمام دورة واحدة حول الشمس.</p>
+        </div>
+        <div class="fact">
+            <p>زحل لا يمتلك سطحًا صلبًا لأنه يتكون من الغازات.</p>
+        </div>
+    </section>
+
+    <section id="location">
+        <h2>موقع كوكب زحل</h2>
+        <p>زحل يقع بين كوكب المشتري وكوكب أورانوس في النظام الشمسي، ويبعد عن الشمس بمسافة تقارب 1.4 مليار كيلومتر.</p>
+    </section>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © 2024</p>
+    </footer>
+</body>
+</html>

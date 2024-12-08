@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كوكب نبتون</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #212121;
+            color: #f5f5f5; 
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            animation: fadeInBody 1s ease-out;
+        }
+
+        header {
+            background-color: #a8133d; 
+            padding: 20px;
+            animation: slideInHeader 1.5s ease-out;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #ffffff; 
+            animation: glowText 1.5s infinite alternate;
+        }
+
+        nav {
+            margin-top: 15px;
+            opacity: 0;
+            animation: fadeInNav 1.5s ease-out 2s forwards;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #a8133d; 
+            text-shadow: 0 0 10px #a8133d, 0 0 20px #a8133d;
+        }
+
+        .content {
+            padding: 20px;
+            animation: fadeInContent 2s ease-out;
+        }
+
+        h2 {
+            color: #f5f5f5; 
+            animation: fadeInText 2s ease-out;
+        }
+
+        .fact {
+            background-color: #424242; 
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border: 1px solid #a8133d;
+            animation: fadeInFact 2s ease-out;
+        }
+
+        .fact p {
+            margin: 0;
+        }
+
+        .neptune-image {
+            margin: 20px auto;
+            display: block;
+            border: 3px solid #a8133d;
+            border-radius: 10px;
+            width: 300px;
+            height: auto;
+            animation: fadeInImage 2s ease-out 1s;
+        }
+
+        footer {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            animation: fadeInFooter 2s ease-out 1s; 
+        }
+
+        .back-button {
+            float: left;
+            background-color: #420808; 
+            color: #ffffff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #a8133d;
+            animation: buttonHover 0.5s ease-in-out;
+        }
+
+        @keyframes fadeInBody {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInHeader {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes glowText {
+            0% {
+                text-shadow: 0 0 10px #a8133d, 0 0 20px #a8133d, 0 0 30px #a8133d;
+            }
+            100% {
+                text-shadow: 0 0 20px #a8133d, 0 0 40px #a8133d, 0 0 60px #a8133d;
+            }
+        }
+
+        @keyframes fadeInNav {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInContent {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInText {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInFact {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInFooter {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInImage {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes buttonHover {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>كوكب نبتون</h1>
+        <a href="../index.html"><button class="back-button">القائمة</button></a>
+        <nav>           
+            <a href="#about">حول نبتون</a>
+            <a href="#facts">حقائق عن نبتون</a>
+            <a href="#location">موقع نبتون</a>
+        </nav>
+    </header>
+
+    <section class="content" id="about">
+        <h2>حول كوكب نبتون</h2>
+        <img src="https://www.sciencefriday.com/wp-content/uploads/2022/04/Neptune.jpg" alt="كوكب نبتون" class="neptune-image">
+        <p>نبتون هو الكوكب الثامن والأبعد عن الشمس في النظام الشمسي. يتميز بلونه الأزرق المميز نتيجة وجود الميثان في جوه، ويملك أقوى رياح في النظام الشمسي.</p>
+    </section>
+
+    <section class="content" id="facts">
+        <h2>حقائق عن كوكب نبتون</h2>
+        <div class="fact">
+            <p>نبتون هو أبعد كوكب عن الشمس في النظام الشمسي.</p>
+        </div>
+        <div class="fact">
+            <p>يستغرق نبتون 165 سنة أرضية لإتمام دورة كاملة حول الشمس.</p>
+        </div>
+        <div class="fact">
+            <p>يحتوي نبتون على عاصفة ضخمة تعرف بالعاصفة الكبرى التي تستمر لعدة أشهر.</p>
+        </div>
+    </section>
+
+    <section class="content" id="location">
+        <h2>موقع كوكب نبتون</h2>
+        <p>نبتون يقع في الطرف البعيد من النظام الشمسي، ويبعد عن الشمس بمسافة تقارب 4.5 مليار كيلومتر.</p>
+    </section>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © 2024</p>
+    </footer>
+</body>
+</html>

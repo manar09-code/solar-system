@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كوكب عطارد</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #263238; 
+            color: #e0e0e0; 
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            animation: fadeInBody 1s ease-out;
+        }
+
+        header {
+            background-color: #ffb300; 
+            padding: 20px;
+            animation: slideInHeader 1.5s ease-out;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #ffffff; 
+            animation: glowText 1.5s infinite alternate;
+        }
+
+        nav {
+            margin-top: 15px;
+            opacity: 0;
+            animation: fadeInNav 1.5s ease-out 2s forwards;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff5722;
+            text-shadow: 0 0 10px #ff5722, 0 0 20px #ff5722;
+        }
+
+        .content {
+            padding: 20px;
+            animation: fadeInContent 2s ease-out;
+        }
+
+        h2 {
+            color: #ffb300;
+            animation: fadeInText 2s ease-out;
+        }
+
+        .fact {
+            background-color: #37474f; 
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border: 1px solid #ffb300; 
+            animation: fadeInFact 2s ease-out;
+        }
+
+        footer {
+            background-color: #212121;
+            color: #e0e0e0;
+            padding: 15px;
+            text-align: center;
+            animation: fadeInFooter 2s ease-out 1s;
+        }
+
+        .planet-image {
+            width: 100%; 
+            max-width: 600px;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 8px;
+            animation: fadeInImage 2s forwards 2s;
+        }
+
+        .back-button {
+            float: left;
+            background-color: #061a2f; 
+            color: #ffffff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #ff5722;
+            animation: buttonHover 0.5s ease-in-out;
+        }
+
+        @keyframes fadeInBody {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInHeader {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes glowText {
+            0% {
+                text-shadow: 0 0 10px #ffb300, 0 0 20px #ffb300, 0 0 30px #ffb300;
+            }
+            100% {
+                text-shadow: 0 0 20px #ffb300, 0 0 40px #ffb300, 0 0 60px #ffb300;
+            }
+        }
+
+        @keyframes fadeInNav {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInContent {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInText {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInFact {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInFooter {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInImage {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes buttonHover {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>كوكب عطارد</h1>
+        <a href="../index.html"><button class="back-button">القائمة</button></a>
+        <nav>
+            <a href="#about">حول عطارد</a>
+            <a href="#facts">حقائق عن عطارد</a>
+            <a href="#location">موقع عطارد</a>
+        </nav>
+    </header>
+
+    <section class="content" id="about">
+        <h2>حول كوكب عطارد</h2>
+        <p>عطارد هو أقرب كوكب إلى الشمس وأصغر كوكب في النظام الشمسي. يتميز سطحه بوجود الحفر العميقة والجبال التي نتجت عن الاصطدامات الكونية. كما أنه لا يمتلك جوًا حقيقيًا.</p>
+        <img src="https://cdn.mos.cms.futurecdn.net/fjbeeRiPRQjQNhizwy7cWX-1200-80.jpg" alt="كوكب عطارد" class="planet-image">
+    </section>
+
+    <section class="content" id="facts">
+        <h2>حقائق عن كوكب عطارد</h2>
+        <div class="fact">
+            <p>عطارد هو أصغر كوكب في النظام الشمسي.</p>
+        </div>
+        <div class="fact">
+            <p>عطارد لا يمتلك أقمارًا تابعة له.</p>
+        </div>
+        <div class="fact">
+            <p>يستغرق عطارد 88 يومًا لإتمام دورة حول الشمس.</p>
+        </div>
+        <div class="fact">
+            <p>تتفاوت درجات الحرارة على سطحه بشكل كبير بين النهار والليل؛ حيث تصل إلى 430 درجة مئوية في النهار وتنخفض إلى -180 درجة مئوية في الليل.</p>
+        </div>
+    </section>
+
+    <section class="content" id="location">
+        <h2>موقع كوكب عطارد</h2>
+        <p>يقع عطارد في أقرب نقطة من الشمس في النظام الشمسي، ويبعد عن الشمس بحوالي 57.9 مليون كيلومتر.</p>
+    </section>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © 2024</p>
+    </footer>
+</body>
+</html>

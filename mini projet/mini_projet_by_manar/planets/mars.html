@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كوكب المريخ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-size: cover;
+            background-position: center;
+            color: #100f0e; 
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            animation: fadeInBody 1s ease-out;
+        }
+
+        header {
+            background-color: rgba(102, 0, 0, 0.8); 
+            padding: 20px;
+            animation: slideInHeader 1.5s ease-out;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #a24e2f;
+            animation: glowText 1.5s infinite alternate;
+        }
+
+        nav {
+            margin-top: 15px;
+            opacity: 0;
+            animation: fadeInNav 1.5s ease-out 2s forwards;
+        }
+
+        nav a {
+            color: #121212; 
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #d88f3e;
+            text-shadow: 0 0 10px #d88f3e, 0 0 20px #d88f3e;
+        }
+
+        h2 {
+            color: #d88f3e;
+            animation: fadeInText 2s ease-out;
+        }
+
+        .fact {
+            background-color: rgba(59, 31, 31, 0.8); 
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border: 1px solid #d88f3e; 
+            animation: fadeInFact 2s ease-out;
+        }
+
+        footer {
+            background-color: rgba(102, 0, 0, 0.8);
+            color: #a24e2f;
+            padding: 15px;
+            text-align: center;
+            animation: fadeInFooter 2s ease-out 1s;
+        }
+
+        .back-button {
+            float: left;
+            background-color: #20030d; 
+            color: #ffffff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #a24e2f;
+            animation: buttonHover 0.5s ease-in-out;
+        }
+
+        @keyframes fadeInBody {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInHeader {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes glowText {
+            0% {
+                text-shadow: 0 0 10px #a24e2f, 0 0 20px #a24e2f, 0 0 30px #a24e2f;
+            }
+            100% {
+                text-shadow: 0 0 20px #a24e2f, 0 0 40px #a24e2f, 0 0 60px #a24e2f;
+            }
+        }
+
+        @keyframes fadeInNav {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInText {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInFact {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInFooter {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes buttonHover {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>كوكب المريخ</h1>
+        <a href="../index.html"><button class="back-button">القائمة</button></a>
+        <nav>
+            <a href="#about">حول المريخ</a>
+            <a href="#facts">حقائق عن المريخ</a>
+            <a href="#location">موقع المريخ</a>
+        </nav>
+    </header>
+
+    <section class="content" id="about">
+        <h2>حول كوكب المريخ</h2>
+        <p>المريخ هو الكوكب الرابع من حيث البعد عن الشمس، ويُعرف بلونه الأحمر المميز الناتج عن وجود أكاسيد الحديد على سطحه.</p>
+        
+        <img src="https://s2.best-wallpaper.net/wallpaper/2880x1800/1810/Mars-planet-space_2880x1800.jpg" alt="صورة كوكب المريخ" style="width: 80%; border-radius: 8px; margin-top: 20px; animation: fadeInImage 2s forwards 2s;">
+    </section>
+    <section class="content" id="facts">
+        <h2>حقائق عن كوكب المريخ</h2>
+        <div class="fact">
+            <p>يعتبر المريخ ثاني أصغر كوكب في النظام الشمسي بعد عطارد.</p>
+        </div>
+        <div class="fact">
+            <p>تبلغ مدة اليوم على المريخ حوالي 24.6 ساعة أرضية.</p>
+        </div>
+        <div class="fact">
+            <p>يحتوي المريخ على جبال ووديان ضخمة، بما في ذلك أوليمبوس مونس، أكبر بركان في النظام الشمسي.</p>
+        </div>
+    </section>
+
+    <section class="content" id="location">
+        <h2>موقع المريخ</h2>
+        <p>يقع المريخ في النظام الشمسي بين كوكب الأرض وكوكب المشتري، ويبعد عن الشمس بمسافة تقارب 228 مليون كيلومتر.</p>
+    </section>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © 2024</p>
+    </footer>
+</body>
+</html>
